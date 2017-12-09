@@ -1,0 +1,15 @@
+﻿<div>
+    <input type="file" name="upload" (change)="sendq($event)" /><br>
+    <input type="submit" value="Загрузить" />
+    <button>Отправить</button>
+    <button (click)="getgame()">Получить</button>
+</div>
+
+<input [(ngModel)]="authorizationModel.login" type="text" />
+<input [(ngModel)]="authorizationModel.password" type="text" />
+<button (click)="send()"></button>
+
+
+<a routerLink="/games">О сайте</a>
+
+<router-outlet></router-outlet>
